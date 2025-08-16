@@ -154,7 +154,7 @@ clear
 figlet -f slant 'Welcome!' | boxes -d ansi-rounded | tte wipe
 echo -e "\e[0;36m⚡=================================⚡\033[0m
   \e[1;36m\e[0m  Bash Version: \e[1;33m$BASH_VERSION"
-echo -e  "  \e[1;31m\e[0m Termux Version: \e[1;33m$(dpkg -s termux-tools | grep '^Version:' | cut -d' ' -f2 | sed 's/+really.*//')"
+echo -e  "  \e[1;31m\e[0m Termux Version: \e[1;33m$TERMUX_VERSION"
 echo -e "  \e[1;33m󰆧\e[0m Installed Packages: \e[1;33m$(dpkg -l | grep '^ii' | wc -l)"
 echo -e '  \e[38;2;173;255;47mALL PROCESSES ARE ONLINE'
 echo -e '\e[0;36m⚡=================================⚡\e[0m'
